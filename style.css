@@ -32,6 +32,10 @@ td {
     position: relative;
 }
 
+#tableMemo {
+    writing-mode: lr-td;
+}
+    
 .cell {
     width: 10rem;
     height: 5rem;
