@@ -8,7 +8,7 @@ header h1 {
     font-family: serif;
 }
 
-#questions {
+.table {
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,6 +31,15 @@ td {
     writing-mode: tb-rl;
     position: relative;
 }
+
+#questions td {
+    writing-mode: tb-rl;
+}
+
+#answerModel td {
+    writing-mode: lr-tb;
+    text-align: center;
+}
     
 .cell {
     width: 10rem;
@@ -50,6 +59,7 @@ td {
 }
 
 .inflectedForm {
+    writing-mode: tb-rl !important;
     font-size: 1.8rem;
     padding-top: 0.7rem;
 }
@@ -80,4 +90,9 @@ td {
     font-size: 4rem;
     margin-left: 2rem;
     font-family: serif;
+}
+
+#answerModel {
+    margin-left: auto;
+    margin-right: auto;
 }
