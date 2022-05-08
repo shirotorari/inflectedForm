@@ -9,7 +9,7 @@
         <header>
             <h1>動詞の活用形</h1>
         </header>
-        <table border="1" id="questions">
+        <table border="1" class="table" id="questions">
             <tr>
                 <th>下ニ段活用</th>
                 <th>上ニ段活用</th>
@@ -74,6 +74,41 @@
             <input type="button" value="採点開始" onclick="OnButtonClick();"/><br/>
         </div>
         <p id="result"></p>
+        <table border="1" class="table" id="answerModel">
+            <th colspan="6">模範解答</th>
+            <tr>
+                <th>下ニ段活用</th>
+                <th>上ニ段活用</th>
+                <th>下一段活用</th>
+                <th>上一段活用</th>
+                <th>四段活用</th>
+                <th>活用の種類</th>
+            </tr>
+            <tr>
+                <td>え</td><td>い</td><td>え</td><td>い</td><td>あ</td>
+                <td class="inflectedForm">未然形</td>
+            </tr>
+            <tr>
+                <td>え</td><td>い</td><td>え</td><td>い</td><td>い</td>
+                <td class="inflectedForm">連用形</td>
+            </tr>
+            <tr>
+                <td>う</td><td>う</td><td>える</td><td>いる</td><td>う</td>
+                <td class="inflectedForm">終止形</td>
+            </tr>
+            <tr>
+                <td>える</td><td>うる</td><td>える</td><td>いる</td><td>う</td>
+                <td class="inflectedForm">連体形</td>
+            </tr>
+            <tr>
+                <td>えれ</td><td>うれ</td><td>えれ</td><td>いれ</td><td>え</td>
+                <td class="inflectedForm">已然形</td>
+            </tr>
+            <tr>
+                <td>えよ</td><td>いよ</td><td>えよ</td><td>いよ</td><td>え</td>
+                <td class="inflectedForm">命令形</td>
+            </tr>
+        </table>
     </body>
     <script type="text/javascript">
         const $circleImage = document.getElementsByClassName("circle");
@@ -84,6 +119,7 @@
         for (let step = 0; step < $checkImage.length; step++) {
             $checkImage[step].style.display = "none";
         }
+        document.getElementsByTagName("tbody")[1].style.display = "none";
         function OnButtonClick() {
             const $answersByUser = document.getElementsByClassName("user-input");
             const answerModel = [
@@ -105,6 +141,7 @@
                 }
             }
             document.getElementById("result").textContent = '結果：'+correctCount+'/'+$answersByUser.length;
+            document.getElementsByTagName("tbody")[1].style.display = "block";
         }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
