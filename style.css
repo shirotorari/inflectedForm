@@ -31,10 +31,6 @@ td {
     writing-mode: tb-rl;
     position: relative;
 }
-
-#tableMemo {
-    writing-mode: lr-td !important;
-}
     
 .cell {
     width: 10rem;
