@@ -1,1 +1,1 @@
-# inflectedForm
+# 動詞の活用形
