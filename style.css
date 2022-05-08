@@ -33,7 +33,7 @@ td {
 }
 
 #tableMemo {
-    writing-mode: lr-td;
+    writing-mode: lr-td !important;
 }
     
 .cell {
