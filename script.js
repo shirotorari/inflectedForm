@@ -1,3 +1,5 @@
+let onButtonClick;
+
 document.addEventListener("DOMContentLoaded", function(){
     const block = "block";
     const none = "none";
@@ -25,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     answerModelElement.style.display = none;
 
-
-    function onButtonClick() {
+    onButtonClick = function() {
         let correctCount = 0;
         for (let step = 0; step < answersByUser.length; step++) {
             if (answersByUser[step].value == answerModel[step]) {
