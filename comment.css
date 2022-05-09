@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+}
+
+#comments {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 100rem;
+}
+
+#comments tr {
+    margin-top: 0;
+}
+
+#comments p {
+    font-size: 1.5rem;
+}
+
+#comments h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#news {
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+#news p {
+    margin: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#comments h2 {
+    font-size: 3rem;
+}
