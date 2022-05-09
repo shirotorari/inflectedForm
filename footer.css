@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+
+footer {
+    margin-left: -10rem;
+    margin-right: -10rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    padding-top: 2rem;
+    background-color: #a67a16;
+    height: 20rem;
+}
+
+footer div {
+    float: left;
+    margin-right: 3rem;
+}
+
+footer li {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #eafbdf;
+    list-style-type: none;
+}
+
+#inquiry {
+    float: right;
+}
