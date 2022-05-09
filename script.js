@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function(){
         "えよ", "いよ", "えよ", "いよ", "え"
     ];
 
+    result.style.display = none;
+
     answerModelElement.style.display = none;
 
     onButtonClick = function() {
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 checkImage[step].style.display = block;
             }
         }
+        result.style.display = block;
         result.textContent = '結果：' + correctCount + '/' + answersByUser.length;
         answerModelElement.style.display = block;
     }
