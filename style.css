@@ -75,15 +75,22 @@ td {
     position: absolute;
 }
 
-#judge_button {
+#button input {
+    font-family: serif;
+    font-size: 2.5rem;
+    width: 15rem;
     text-align: center;
     margin-top: 5rem;
 }
 
-#judge_button input {
-    font-family: serif;
-    font-size: 2.5rem;
-    width: 15rem;
+#button {
+    display: flex;
+}
+
+#judge_button {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative ;
 }
 
 #result {
